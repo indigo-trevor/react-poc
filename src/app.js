@@ -6,4 +6,4 @@ import "./css/styles.scss";
 // Components
 import Scoreboard from './components/Scoreboard';
 
-ReactDOM.render(<Scoreboard />, document.getElementById('container'));
+ReactDOM.render(<Scoreboard />, document.getElementById('app-container'));
