@@ -1,9 +1,8 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-
 var webpackConfig = {
 	entry: "./src/app.js",
 	output: {
-		path: "build",
+		path: "build/",
 		filename: "bundle.js"
 	},
 	module: {

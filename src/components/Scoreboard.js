@@ -4,16 +4,16 @@ import React from 'react';
 const INITIAL_STATE = {
   players: [
     {
-      name: "Jim Hoskins",
-      score: 31,
+      name: "Trevor Robinson",
+      score: 77,
     },
     {
-      name: "Andrew Chalkley",
-      score: 20,
+      name: "Matt Michaels",
+      score: 66,
     },
     {
-      name: "Alena Holligan",
-      score: 50,
+      name: "Tyler Cutforth",
+      score: 55,
     },
   ],
 }
