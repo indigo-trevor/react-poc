@@ -1,5 +1,5 @@
 body {
-  background: #d5d5d5;
+  background: #050505;
   font-family: arial;
   color: #FAFAFA;
   text-transform: uppercase;
@@ -235,4 +235,12 @@ body {
     width: 35%;
     margin: 0 auto;
   }
+}
+
+.slide-enter {
+  transform: translateX(-100%);
+}
+.slide-enter.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
 }

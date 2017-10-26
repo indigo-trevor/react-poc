@@ -1,5 +1,6 @@
 // Libs
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const INITIAL_STATE = {
   players: [
