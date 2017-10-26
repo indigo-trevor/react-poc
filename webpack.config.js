@@ -2,7 +2,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var webpackConfig = {
 	entry: "./src/app.js",
 	output: {
-		path: "build/",
+		path: "build",
 		filename: "bundle.js"
 	},
 	module: {
@@ -16,8 +16,9 @@ var webpackConfig = {
 				test: /\.scss$/
 			},
 			{
-				loaders: ["url", "img"],
-				test: /\.png$/
+				test: /\.(png|jpg)$/,
+      	loader: 'url?limit=25000',
+				output: 'build/img'
 			}
 		]
 	},

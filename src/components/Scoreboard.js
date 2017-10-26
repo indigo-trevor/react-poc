@@ -41,22 +41,24 @@ const Scoreboard = React.createClass({
 
   render: function () {
     return (
-      <div className="scoreboard">
-        <Header players={this.state.players} />
-        <div className="players">
-          {this.state.players.map(function(player, index) {
-             return (
-               <Player
-                 name={player.name}
-                 score={player.score}
-                 key={player.name}
-                 onScoreChange={(delta) => this.onScoreChange(index, delta)}
-                 onRemove={() => this.onRemovePlayer(index)}
-               />
-             );
-           }.bind(this))}
+      <div className="scoreboard-container">
+        <div className="scoreboard">
+          <Header players={this.state.players} />
+          <div className="players">
+            {this.state.players.map(function(player, index) {
+               return (
+                 <Player
+                   name={player.name}
+                   score={player.score}
+                   key={player.name}
+                   onScoreChange={(delta) => this.onScoreChange(index, delta)}
+                   onRemove={() => this.onRemovePlayer(index)}
+                 />
+               );
+             }.bind(this))}
+          </div>
+          <AddPlayerForm onAdd={this.onAddPlayer} />
         </div>
-        <AddPlayerForm onAdd={this.onAddPlayer} />
       </div>
     );
   }
