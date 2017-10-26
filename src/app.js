@@ -7,6 +7,7 @@ import "./css/styles.scss";
 import Logo from './components/Logo';
 import Scoreboard from './components/Scoreboard';
 
+var rootContainer = document.getElementById("app-container");
 var modals = (
   <div>
     <Logo />
@@ -14,4 +15,4 @@ var modals = (
   </div>
 );
 
-ReactDOM.render(modals, document.getElementById("app-container"));
+ReactDOM.render(modals, rootContainer);
